@@ -56,5 +56,8 @@
   },
   "main": "./dist/bundle.min.js",
   "entry": "./dist/bundle.min.js",
-  "author": "dtnghia47@gmail.com"
+  "author": "dtnghia47@gmail.com",
+  "contributors": [
+    "Nghĩa Đinh <dtnghia47@gmail.com> (https://github.com/dtnghia47)"
+  ]
 }
