@@ -1,6 +1,6 @@
 {
   "name": "dtnghia47-uikit",
-  "version": "0.1.8",
+  "version": "0.1.13",
   "scripts": {
     "build": "rollup -c",
     "deploy": "rollup -c && npm publish"
@@ -33,8 +33,6 @@
     "react-dom": "^17.0.2",
     "rollup": "^2.47.0",
     "rollup-plugin-terser": "^7.0.2",
-    "styled-components": "^5.3.0",
-    "styled-components.macro": "^1.0.0",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"
   },
@@ -56,6 +54,7 @@
       }
     }
   },
-  "main": "./bundle.js",
-  "entry": "./bundle.js"
+  "main": "./dist/bundle.min.js",
+  "entry": "./dist/bundle.min.js",
+  "author": "dtnghia47@gmail.com"
 }

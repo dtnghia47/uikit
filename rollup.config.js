@@ -37,11 +37,12 @@ export default {
   input: 'src/index.js',
   output: [
     {
-      file: 'bundle.js',
-      format: 'cjs'
+      file: './dist/bundle.js',
+      format: 'umd',
+      name: 'uikit'
     },
     {
-      file: 'bundle.min.js',
+      file: './dist/bundle.min.js',
       format: 'iife',
       name: 'version',
       plugins: [terser()]
@@ -58,9 +59,9 @@ export default {
     babel({ babelHelpers: 'bundled' }),
     resolve({
       // pass custom options to the resolve plugin
-      customResolveOptions: {
-        moduleDirectory: 'node_modules'
-      },
+      // customResolveOptions: {
+      //   moduleDirectory: 'node_modules'
+      // },
       browser: true,
     }),
   ]
