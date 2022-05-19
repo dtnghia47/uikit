@@ -9,7 +9,11 @@
 /coverage
 
 # production
-/build
+**/build/*
+/dist/*
+**/.next
+**/examples/build/*
+**/examples/out/*
 
 # misc
 .DS_Store

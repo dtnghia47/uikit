@@ -1,9 +1,12 @@
 {
   "name": "dtnghia47-uikit",
-  "version": "0.1.13",
+  "version": "0.1.18",
   "scripts": {
+    "dev": "rollup -c -w",
     "build": "rollup -c",
-    "deploy": "rollup -c && npm publish"
+    "deploy": "rollup -c && npm publish",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -14,10 +17,12 @@
   "peerDependencies": {
     "react": ">=16.3.0",
     "react-dom": ">=16.3.0",
-    "styled-components": "^5.3.0",
-    "styled-components.macro": "^1.0.0"
+    "styled-components": "^5.3.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "^5.3.0",
+    "styled-map": "^3.3.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.0",
@@ -29,6 +34,11 @@
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-replace": "^2.4.2",
     "@rollup/plugin-typescript": "^8.2.1",
+    "@storybook/addon-actions": "^6.3.5",
+    "@storybook/addon-essentials": "^6.3.5",
+    "@storybook/addon-links": "^6.3.5",
+    "@storybook/react": "^6.3.5",
+    "babel-loader": "^8.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup": "^2.47.0",
